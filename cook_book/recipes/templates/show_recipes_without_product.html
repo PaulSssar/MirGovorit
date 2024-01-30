@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <table>
+    <thead>
+      <th>Название</th>
+      <th>ID</th>
+    </thead>
+    <tbody>
+      {% for recipe in recipes %}
+        <tr>
+          <td>{{ recipe }}</td>
+          <td>{{ recipe.id }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</body>
+</html>
